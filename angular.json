@@ -62,7 +62,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "sai-fe-challenge:build"
+            "browserTarget": "sai-fe-challenge:build",
+            "proxyConfig": "proxy.conf.js"
           },
           "configurations": {
             "production": {
