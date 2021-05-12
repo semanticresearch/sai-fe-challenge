@@ -9,11 +9,22 @@ The functionality is most important.
 
 Feel free to use any open source tools such as [Angular Material](https://material.angular.io/) or [Bootstrap](https://getbootstrap.com/).
 
-The '/api' endpoints mentioned below will work like a typical web API, and will return responses at: http://localhost:4200/api
+The pre-built '/api' endpoints mentioned below will work like a typical web API, and will return responses at, `http://localhost:4200/api/*`.
+You are not expected to write a mock API.
+
+## Product Submission
 
 Please do not publish your solution publicly to git, email a .patch file of all of your changes to:
 
 `SAI Front End Development <b6ae80e6.semanticresearch.com@amer.teams.ms>`
+
+After creating a patch file, view it to ensure all edited & newly created files are included. Here are instructions to create a patch file:
+
+https://stackoverflow.com/questions/5159185/create-a-git-patch-from-the-uncommitted-changes-in-the-current-working-directory
+
+## Questions
+
+When submitting your solution, include any questions you had while working on the challenge, along with what answer you decided to move forward with and why.
 
 ## Challenge
 
@@ -29,19 +40,23 @@ Write an application that:
   * If auth validation fails, show an error message
 * Home page with the following:
   * Route is '/articles'
-     * Cannot access this route if not logged in
-  * Shows the logged in user at the top of the page (Last Name, First Name)
-     * Should use a pipe that takes in the user object.
-     * Get current logged in user from '/api/auth' (GET)
+    * Cannot access this route if not logged in
+  * Shows the logged-in user at the top of the page (Last Name, First Name)
+    * Should use a pipe that takes in the user object.
+    * Get current logged-in user from '/api/auth' (GET)
   * Shows table of articles
-     * Fetched from '/api/articles' (GET)
-     * Two columns: Title, Author
-     * Title value is a link which when clicked:
-       *  Shows the title, and full content of the article below the table
+    * Fetched from '/api/articles' (GET)
+    * Two columns: Title, Author
+    * Title value is a link which when clicked:
+      *  Shows the title, and full content of the article below the table
 
 ## Bonus (Optional)
 When selecting an article from the table the route is updated so when sharing the link that article's content
 is already displaying without having to click.
+
+## Angular CLI
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
 
 ## Development server
 
@@ -65,4 +80,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
